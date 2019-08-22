@@ -1,0 +1,1 @@
+[{"Name":"session_id","Value":"7oteitv74pr8cbbvdk1smebfqdjkjo5opnnk13fbupspang5a780","Domain":".amocrm.ru","Path":"\/","Max-Age":null,"Expires":null,"Secure":true,"Discard":false,"HttpOnly":true},{"Name":"user_lang","Value":"ru","Domain":".amocrm.ru","Path":"\/","Max-Age":"157852800","Expires":1724334036,"Secure":false,"Discard":false,"HttpOnly":false}]
