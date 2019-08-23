@@ -1,1 +1,18 @@
-<h1>Home page</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID сделки</th>
+        <th scope="col">Название сделки</th>
+        <th scope="col">Бюджет</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->last_leads['_embedded']['items'] as $key => $value): ?>
+        <tr>
+            <th scope="row">#<?php echo $value['id']; ?></th>
+            <td><?php echo $value['name']; ?></td>
+            <td><?php echo $value['sale']; ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

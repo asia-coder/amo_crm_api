@@ -18,16 +18,19 @@ class HomeController extends Controller
 {
     public function index(Request $request, Response $response, Service $service)
     {
+        $leads = [];
 
         try {
             $crm = new AmoCRMService();
-            echo "<pre>";
-            print_r($crm->getLastLeads());
+            /*echo "<pre>";
+            print_r($crm->getLastLeads());*/
+            $leads = $crm->getLastLeads();
         } catch (\Exception $e) {
             exit($e);
         }
 
-        $service->title = "Home";
+        $service->title = "Последые сделки";
+        $service->last_leads = $leads;
         $service->template = "home";
         $service->render($this->getTemplatePath());
     }
